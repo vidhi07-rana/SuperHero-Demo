@@ -1,0 +1,42 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  height: 100vh; 
+  background-image: url('https://img.freepik.com/premium-photo/free-photo-most-trending-hd-8k-wallpaper_915071-110213.jpg?ga=GA1.1.1251179688.1686898531&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.caption p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+button {
+  height: 60px;
+  width: 130px;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+  margin-top: 20px; 
+  background-color: #007bff; 
+}

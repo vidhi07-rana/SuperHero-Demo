@@ -1,0 +1,140 @@
+mat-toolbar {
+
+    background-image: url('https://img.freepik.com/free-photo/dark-blue-plain-textured-background_53876-102466.jpg?ga=GA1.1.1251179688.1686898531&semt=ais_hybrid');
+    background-size: cover;
+
+    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.logo img {
+  height: 100px;  
+  width: 100px;   
+  border-radius: 50%;  
+  margin-right: 10px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu-links a {
+  color: white; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: #ffd700;
+}
+
+.login-btn button {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 8px 15px;
+  transition: background-color 0.3s;
+}
+
+.login-btn button:hover {
+  background-color: #3f75af;
+  color: white;
+}
+
+
+.hero-card {
+  background-color: rgb(47, 72, 120); 
+  color: #1e90ff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 16px;
+  width: 300px;
+  margin: 16px;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-card mat-card-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #1e90ff; 
+  text-align: center;
+}
+
+.hero-card .details {
+  margin-top: 10px;
+  color: #1e90ff; 
+}
+
+.hero-card .details p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+button.mat-raised-button {
+  background: linear-gradient(135deg, #1e90ff, #4b9cd3);
+
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  height: 60px;
+  width: 130px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button.mat-raised-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s ease;
+}
+
+button.mat-raised-button:hover::before {
+  left: 100%;
+}
+
+button.mat-raised-button:hover {
+  background: linear-gradient(135deg, #9aa5ac, #1e90ff); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px); 
+}
+
+button.mat-raised-button:active {
+  transform: translateY(1px); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.active-link {
+  color: rgb(183, 211, 25) !important; 
+  font-weight: bold; 
+  padding: 5px 10px; 
+}
+h3 {
+  font-family: 'Gothic', sans-serif; 
+  font-size: 36px;
+ color: cadetblue;
+  text-shadow: 4px 4px 10px rgba(235, 246, 206, 0.3);
+  
+}

@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <span class="logo">
+
+    <img routerLink="/home" src="https://tse4.mm.bing.net/th/id/OIP.Jr-n-DygZKvx_YyXcdFwvwHaHZ?pid=ImgDet&w=204&h=204&c=7&dpr=1.9" alt="Avengers Logo">
+  </span><h3>ℌ𝔢𝔯𝔬𝔙𝔢𝔯☄</h3>
+  <div class="menu-links">
+    <a mat-button routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a mat-button routerLink="/team"  routerLinkActive="active-link">Hero Team</a>
+        <a mat-button routerLink="/about"  routerLinkActive="active-link">About</a>
+        <a mat-button routerLink="/contact"  routerLinkActive="active-link">Contact</a>
+
+  </div>
+  <span class="login-btn">
+    <button mat-raised-button color="accent" style="border-radius: 40px;" (click)="logout()">Logout →</button>
+  </span>
+</mat-toolbar>
+
+
+

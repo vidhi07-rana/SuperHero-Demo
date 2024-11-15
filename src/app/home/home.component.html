@@ -1,0 +1,32 @@
+<div *ngIf="ifLoading" class="loading-container">
+  <p>Loading heroes...</p>
+</div>
+
+<div *ngIf="!ifLoading && heroes.length" class="search-wrapper">
+
+  <app-hero-search></app-hero-search>
+</div>
+
+<div *ngIf="!ifLoading && heroes.length" class="hero-list">
+  <div *ngFor="let hero of heroes" class="hero-card">
+    <mat-card>
+      <mat-card-header>
+      </mat-card-header>
+      <img mat-card-image (click)="viewHeroDetails(hero.id)" [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" alt="{{ hero.name }}">
+      <mat-card-title style="  text-align: center;">{{ hero.name }}</mat-card-title>
+
+      <mat-card-actions>  
+
+
+        <button mat-raised-button color="primary" (click)="toggleFavorite(hero)">
+          <mat-icon>{{ hero.favorite ? 'star' : 'star_border' }}</mat-icon> <!-- Star Icon -->
+          {{ hero.favorite ? 'Remove from Favorites' : 'Add to Favorites' }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<div *ngIf="!ifLoading && !heroes.length" class="no-heroes-message">
+  <p>No heroes found.</p>
+</div>

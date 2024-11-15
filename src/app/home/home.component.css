@@ -1,0 +1,193 @@
+.hero-list {
+  display: flex;
+  justify-content: space-evenly; 
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+.hero-card {
+  text-align: center;
+
+  background:#cccaf3; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px; 
+  text-align: center;      
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 28%; 
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-card img {
+  width: 80%; 
+  height: auto;
+  border-radius: 8px; 
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.hero-list {
+  text-align: center;
+
+  display: flex;
+  justify-content: space-evenly; 
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.hero-card {
+  background: #9693aa; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 22%; 
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-card img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.hero-card h3 {
+  font-size: 1.1em; 
+  margin-bottom: 10px;
+  color: #333; 
+  font-weight: bold;
+}
+
+.hero-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px; 
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s, transform 0.2s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+}
+
+h2 {
+  color: #f39c12; 
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  color: #f39c12; 
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.no-heroes-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: gray;
+}
+
+
+.hero-card h3 {
+  font-size: 1.1em; 
+  margin-bottom: 10px;
+  color: #333; 
+  font-weight: bold;
+}
+
+.hero-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.hero-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+}
+
+h2 {
+  color: #f39c12; 
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+  color: #f39c12;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.no-heroes-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: gray;
+}
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: transparent; 
+  width: 100%;
+}
+
+app-hero-search {
+  width: 200%;
+  max-width: 800px;  
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.loading-container {
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFA500; 
+  margin-top: 20px;
+}

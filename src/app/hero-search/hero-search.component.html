@@ -1,0 +1,15 @@
+<div class="search-container">
+    <input
+      type="text"
+      placeholder="🔍 Search for a hero..."
+      (input)="search($event)"
+    />
+    <div *ngIf="heroes$ | async as heroes" class="search-results-container" >
+        <div *ngFor="let hero of heroes" class="search-result" (click)="onClick(hero.id)">
+          <img  [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" alt="{{ hero.name }}" />
+          <span >{{ hero.name }}</span>
+      
+        </div>
+      </div>
+  </div>
+  
