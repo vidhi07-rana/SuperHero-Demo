@@ -79,7 +79,7 @@
 }
 
 .hero-card button {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #49496e, #0c0426);
   color: white;
   border: none;
   border-radius: 20px; 
@@ -190,4 +190,10 @@ app-hero-search {
   font-size: 1.5em;
   color: #FFA500; 
   margin-top: 20px;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

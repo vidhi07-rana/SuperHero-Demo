@@ -1,6 +1,6 @@
-<div *ngIf="ifLoading" class="loading-container">
-  <p>Loading heroes...</p>
-</div>
+  <div *ngIf="ifLoading" class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
 
 <div *ngIf="!ifLoading && heroes.length" class="search-wrapper">
 
@@ -15,7 +15,7 @@
       <img mat-card-image (click)="viewHeroDetails(hero.id)" [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" alt="{{ hero.name }}">
       <mat-card-title style="  text-align: center;">{{ hero.name }}</mat-card-title>
 
-      <mat-card-actions>  
+      <mat-card-actions>                                            
 
 
         <button mat-raised-button color="primary" (click)="toggleFavorite(hero)">

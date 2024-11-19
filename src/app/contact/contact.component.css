@@ -44,8 +44,8 @@
 }
 
 .contact-us button {
-  background-color: #007bff;
-  color: white;
+  background: linear-gradient(135deg, #e2e2f0, #4f29cb);
+  color: rgb(17, 6, 27);
   border: none;
   border-radius: 25px;
   padding: 12px 30px;
@@ -68,7 +68,7 @@ border-radius: 30px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px; 
 }
 
 .thank-you-message mat-icon {

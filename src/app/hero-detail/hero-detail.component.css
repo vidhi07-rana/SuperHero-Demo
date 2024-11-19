@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #cccaf3;
+    background: linear-gradient(135deg, #dbdbf1, #6a4fc3);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -51,7 +51,7 @@
   
   .hero-detail button {
     padding: 12px 25px;
-    background-color: #1e90ff;
+    background: linear-gradient(135deg, #49496e, #0c0426);
     color: white;
     font-weight: bold;
     font-size: 1.1em;
@@ -99,4 +99,10 @@
     height: 50vh; 
     font-size: 1.5em;
     color: yellow;
+  }
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }

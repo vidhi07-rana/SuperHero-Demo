@@ -5,13 +5,14 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css'],
   standalone: true,
-  imports: [CommonModule, RouterLink, MatButtonModule, MatCardModule, MatIconModule]
+  imports: [CommonModule, RouterLink, MatButtonModule, MatCardModule, MatIconModule,MatProgressSpinner]
 })
 export class HeroDetailComponent implements OnInit {
   hero!: Hero;
@@ -25,11 +26,11 @@ export class HeroDetailComponent implements OnInit {
       this.loadHeroDetails(id);
     }
   }
-
+         
   loadHeroDetails(id: string): void {
     this.isLoading = true;
     this.heroService.getHeroById(id).subscribe(
-      (hero) => {
+      (hero) => {                       
         this.hero = hero;
         this.updateFavoriteStatus();
         this.isLoading = false;

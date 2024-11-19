@@ -10,7 +10,7 @@
     <div class="form-group">
       <mat-form-field>
         <mat-label>Your Name</mat-label>
-        <input matInput type="text" id="name" name="name" [(ngModel)]="contact.name" #name="ngModel" required />
+        <input matInput type="text" id="name" name="name" [(ngModel)]="contact.name" #name="ngModel" required >
         <mat-error *ngIf="name.touched && name.invalid && !submitted"><mat-icon>error</mat-icon> Name is required</mat-error>
       </mat-form-field>
     </div>
@@ -18,7 +18,7 @@
     <div class="form-group">
       <mat-form-field>
         <mat-label>Your Email</mat-label>
-        <input matInput type="email" id="email" name="email" [(ngModel)]="contact.email" #email="ngModel" required />
+        <input matInput type="email" id="email" name="email" [(ngModel)]="contact.email" #email="ngModel" required >
         <mat-error *ngIf="email.touched && email.invalid  && !submitted"><mat-icon>error</mat-icon> Email is required</mat-error>
       </mat-form-field>
     </div>

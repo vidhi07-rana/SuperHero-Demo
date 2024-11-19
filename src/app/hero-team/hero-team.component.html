@@ -6,10 +6,9 @@
   <div *ngIf="heroTeam.length" class="hero-team"  style="  padding: 13px;
 " >
   <div *ngFor="let hero of heroTeam" class="hero-card"   >
-    <mat-card >
+    <mat-card>
       <mat-card-header>
         <mat-card-title>{{ hero.name }}</mat-card-title>
-        <!-- Filled star icon for removing from favorites -->
         <mat-icon
           style="cursor: pointer; color: gold; margin-left:0dvb;"
           (click)="toggleFavorite(hero)"

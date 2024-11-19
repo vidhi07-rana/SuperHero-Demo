@@ -7,11 +7,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { HeroSearchComponent } from "../hero-search/hero-search.component";
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, HeroSearchComponent],
+  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, HeroSearchComponent,MatProgressSpinner],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
   ifLoading = true;
   heroTeam: Hero[] = [];
 
-  constructor(private heroService: HeroService, private router: Router) {}
+  constructor(private heroService: HeroService, private router: Router ) {}
 
   ngOnInit(): void {
     this.loadHeroes();
@@ -39,7 +40,7 @@ export class HomeComponent implements OnInit {
         this.updateFavoriteStatus(); 
         this.ifLoading = false;
       },
-      (error) => {
+      (error) => {    
         console.error('Error fetching heroes:', error);
         this.ifLoading = false;
       }
